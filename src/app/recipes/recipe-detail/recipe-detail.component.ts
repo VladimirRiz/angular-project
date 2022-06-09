@@ -7,6 +7,7 @@ import { Recipe } from '../recipe.modetel';
   styleUrls: ['./recipe-detail.component.scss']
 })
 export class RecipeDetailComponent implements OnInit {
+  isOpen: boolean = false
   @Input() recipe!: Recipe
 
   ngOnInit(): void {

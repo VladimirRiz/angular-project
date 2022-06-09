@@ -7,6 +7,7 @@ import { Component, EventEmitter, Output } from "@angular/core";
 })
 
 export class HeaderComponent {
+  isOpen: boolean = false
   @Output() pageEmitter = new EventEmitter<string>()
 
   onSelect = (page: string) => {
